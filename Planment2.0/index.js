@@ -12,12 +12,7 @@ function setRem() {
         vW = (vH * 1920) / 1080;
     }
     let rem = vW * basePc; // 以默认比例值乘以当前窗口宽度,得到该宽度下的相应font-size值
-    console.log(rem);
-    if (rem < 50) {
-        document.documentElement.style.fontSize = '50px'
-    } else {
-        document.documentElement.style.fontSize = rem + 'px';
-    }
+    document.documentElement.style.fontSize = rem + 'px';
 }
 // 初始化
 setRem();
